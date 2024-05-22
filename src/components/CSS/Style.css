@@ -1,0 +1,128 @@
+.container {
+  background-color: #f0f0f0;
+  padding-top: 78px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.task-empty {
+  padding-left: 30px;
+}
+
+.container h1 {
+  padding-left: 30px;
+}
+
+.task-list {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 2rem;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-details {
+  max-width: 280px;
+}
+
+.task-details h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.task-details p {
+  margin: 0.5rem 0 0;
+  color: #666;
+}
+
+.task-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-status {
+  margin: 4px;
+  background-color: #d8d8e8;
+  color: #505459;
+  font-size: 12px;
+  font-weight: 500;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  padding: 1px 7px;
+  border-radius: 16px;
+  align-items: center;
+  cursor: pointer;
+  min-height: 32px;
+  height: 1px;
+}
+
+.task-status:hover {
+  background-color: #cbcbdc;
+}
+.task-actions img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: transform 0.2s;
+}
+
+.task-actions img:hover {
+  transform: scale(1.1);
+}
+
+.toast-container .Toastify__toast-container {
+  margin-top: 75px;
+}
+
+.toast-container .Toastify__toast:first-of-type {
+  margin-top: 75px;
+}
+
+.Toastify__progress-bar {
+  background: red !important;
+}
+
+.Toastify__progress-bar--warning {
+  background: red !important;
+}
+
+.toast-delete .Toastify__toast-icon svg {
+  fill: red !important;
+}
+
+@media (max-width: 1024px) {
+  .task-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .task-list {
+    grid-template-columns: 1fr;
+  }
+
+  .task-item {
+    padding: 1rem;
+  }
+
+  .task-actions {
+    justify-content: center;
+  }
+
+  .task-actions img {
+    margin: 0 0.5rem;
+  }
+}

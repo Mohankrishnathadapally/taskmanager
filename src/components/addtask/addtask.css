@@ -1,0 +1,30 @@
+.addtask {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.addtask img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.addtask p {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.addtask p.show {
+  visibility: visible;
+  opacity: 1;
+}

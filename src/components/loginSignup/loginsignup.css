@@ -1,0 +1,89 @@
+.login-signup-container {
+  display: flex;
+  height: 100vh;
+  background-image: url('../../assets/background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome-message,
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.signup-form {
+  width: min(23vw, 330px);
+  color: #000000;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  animation: fadeIn 0.5s;
+  margin-left: -60%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-container Icon {
+  margin-right: 10px;
+}
+
+.input-container input {
+  flex: 1;
+  outline: none;
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.button-submit {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: #0056b3;
+}
+
+.form-container p span {
+  color: #171717;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.click-here{
+  cursor: default;
+}
+
+@media (min-width: 768px) {
+  .login-signup-container {
+    flex-direction: row;
+  }
+
+  .welcome-message,
+  .form-container {
+    flex: 1;
+    height: auto;
+  }
+}
